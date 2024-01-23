@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .button-icon {
+    margin-right: 5px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .form-container {
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+  
+  .table-container h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    padding: 5px;
+  }
+  
+  .delete-icon:hover {
+    color: #ff0000;
+  }
+  
+  .edit-icon:hover {
+    color: #007bff;
+  }
+  
+  #add-user-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-user-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  #add-user-form .btns {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-user-form .btns:hover {
+    background-color: #999;
+    color: #fff;
+  }
+  #add-user-form input {
+    display: block;
+    margin-bottom: 10px;
+    width: 12%;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 670px;
+  }
+    

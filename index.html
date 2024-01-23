@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>MOCK API</h1>
+        <div class="header-buttons">
+            <button id="add-user-btn" onclick="toggleAddUserForm()" class="button">
+                <i class="fas fa-user-plus button-icon"></i>
+                
+            </button>
+            <button id="view-users-btn" onclick="toggleUserList()" class="button">
+                <i class="fas fa-binoculars button-icon"></i>
+                
+            </button>
+        </div>
+    </header>
+
+    <div id="add-user-form-container" class="form-container hidden">
+        <h2>Add User</h2>
+        <form id="add-user-form" onsubmit="addUser(event)">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="text" id="state" placeholder="State" required>
+            <div>
+                <button type="submit">Save</button>
+                <button type="button" onclick="cancelAddUser()" class="btns">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="user-list-container" class="table-container hidden">
+        <h2>User List</h2>
+        <table id="user-list">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>State</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="user-table-body">
+                <!-- User rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
